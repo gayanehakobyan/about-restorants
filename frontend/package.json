@@ -1,0 +1,51 @@
+{
+  "name": "Restorant-page",
+  "version": "1.0.0",
+  "description": "Restornats page",
+  "main": "build/source/main.js",
+  "config": {
+    "port": 5000,
+    "host": "localhost"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development webpack serve --progress"
+  },
+  "author": "Gayane Hakobyan <gayanehakobyan93@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "7.0.3",
+    "google-maps-react": "^2.0.6",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-router-dom": "5.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.4",
+    "@types/react-dom": "17.0.3",
+    "@types/react-router": "5.1.13",
+    "@types/react-router-dom": "5.1.7",
+    "clean-webpack-plugin": "3.0.0",
+    "compression-webpack-plugin": "7.1.2",
+    "copy-webpack-plugin": "8.1.1",
+    "css-loader": "5.2.4",
+    "file-loader": "6.2.0",
+    "html-loader": "2.1.2",
+    "html-webpack-plugin": "5.3.1",
+    "mini-css-extract-plugin": "1.6.0",
+    "node-sass": "5.0.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "style-loader": "2.0.0",
+    "script-ext-html-webpack-plugin": "2.1.4",
+    "string-replace-loader": "3.0.1",
+    "sass-loader": "11.0.1",
+    "terser-webpack-plugin": "5.1.1",
+    "ts-loader": "9.1.1",
+    "typescript": "4.2.4",
+    "webpack": "5.36.2",
+    "webpack-cli": "4.6.0",
+    "webpack-dev-server": "3.11.2",
+    "webpack-spritesmith": "1.1.0",
+    "write-file-webpack-plugin": "4.5.1"
+  }
+}
