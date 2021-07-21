@@ -8,7 +8,6 @@ const PageDetails =  React.lazy(() => import("./page/PageDetails"))
 
 const Main: React.FunctionComponent<IMainProps> = (props: IMainProps): JSX.Element =>
 {
-    console.log("main", props.location)
     return (
         <section className="main-content">
             <Switch>

@@ -17,11 +17,8 @@ const item_details_data_get = (req, res) => {
 
     const id = req.params.id;
 
-    // console.log("item_details_data_get", req.params);
-
     RestorantsDetails.findById(id)
     .then(result => {
-        // console.log("resulr", result)
         res.json({data: result});
       })
       .catch(err => {
@@ -36,8 +33,6 @@ const item_details_data_update = (req, res) => {
 
   const id = req.params.id;
   const data = req.body
-
-  console.log("update iitem in back", req.params, req.body);
 
    RestorantsDetails.findByIdAndUpdate(id, data)
    .then(result => {

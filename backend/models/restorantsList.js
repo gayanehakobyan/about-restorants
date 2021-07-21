@@ -14,6 +14,9 @@ const restorantsList = new Schema({
     },
     address: {
         type: String,
+    },
+    center: {
+        type: Array
     }
 }, {timestamps: true});
 

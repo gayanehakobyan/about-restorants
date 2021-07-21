@@ -10,7 +10,6 @@ const PageDetails: React.FunctionComponent<IPageDetailsProps> = (props: IPageDet
 
     React.useEffect(() =>
     {
-        console.log("GET user effect")
         getDetails();
     }, []);
 
@@ -39,13 +38,11 @@ const PageDetails: React.FunctionComponent<IPageDetailsProps> = (props: IPageDet
 
     const updateData = async (data, callback?) =>
     {
-        console.log("rate", data)
         try {
             const res = await fetchData(`${HOST}/item/update/${props.location.pathname.split("/")[1]}`, "PUT", data);
 
                 if(res.data.success)
                 {
-                    console.log('dfgtyhujiop', res)
                     useDetails(prevState => {
                         return {...prevState, ...data}
                     });
@@ -59,7 +56,6 @@ const PageDetails: React.FunctionComponent<IPageDetailsProps> = (props: IPageDet
         }
     }
 
-    console.log("page details", details)
     return (
         <div className="page-details">
             {

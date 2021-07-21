@@ -19,4 +19,5 @@ export interface IListData
     _id: string;
     map_address: string;
     rate: number;
+    center:any
 }
